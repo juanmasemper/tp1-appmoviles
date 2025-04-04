@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Bienvenida -->
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_message"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Plataforma -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/platform_prompt"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platform_android"
+                android:buttonTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioIOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platform_ios"
+                android:buttonTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/imagePlatform"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/platform_prompt" />
+
+        <!-- Preferencias -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preferences_prompt"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- CheckBoxes -->
+        <CheckBox
+            android:id="@+id/checkProgramming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_programming"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkNetworking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_networking"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_security"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkHardware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_hardware"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_other"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Preferencia extra -->
+        <EditText
+            android:id="@+id/editTextOtherPreference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_other_preference"
+            android:inputType="text"
+            android:visibility="gone"
+            android:minHeight="48dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="username" />
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_confirm"
+            android:background="@drawable/button_register"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
+

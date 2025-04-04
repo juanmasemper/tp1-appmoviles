@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TP1-appmoviles</string>
+
+    <string name="login_title">TPN1 - App Móviles</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="username_hint">Usuario</string>
+    <string name="password_hint">Contraseña</string>
+
+    <string name="hint_name">Nombre</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_repeat_password">Repetir Contraseña</string>
+    <string name="button_register">Registrarse</string>
+
+    <string name="welcome_message">Bienvenido a la aplicación Juan Torres</string>
+    <string name="platform_prompt">Seleccioná tu plataforma:</string>
+    <string name="platform_android">Android</string>
+    <string name="platform_ios">iOS</string>
+    <string name="preferences_prompt">Seleccioná tus preferencias:</string>
+    <string name="pref_programming">Programación</string>
+    <string name="pref_networking">Redes</string>
+    <string name="pref_security">Seguridad</string>
+    <string name="pref_hardware">Hardware</string>
+    <string name="pref_other">Otra</string>
+    <string name="hint_other_preference">Especificá tu preferencia</string>
+    <string name="button_confirm">Confirmar</string>
+
+</resources>
