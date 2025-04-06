@@ -1,6 +1,7 @@
 package com.example.tp1_appmoviles
 
 import android.os.Bundle
+import android.content.Intent
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -60,6 +61,11 @@ class WelcomeActivity : AppCompatActivity() {
 
             val mensaje = "Plataforma: $plataforma\nPreferencias: ${preferencias.joinToString(", ")}"
             Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, PreferenceActivity::class.java)
+            intent.putExtra("plataforma_seleccionada", plataforma)
+            intent.putExtra("preferencias_seleccionadas", preferencias.joinToString(", "))
+            startActivity(intent)
         }
     }
 }
