@@ -25,5 +25,9 @@
     <string name="pref_other">Otra</string>
     <string name="hint_other_preference">Especificá tu preferencia</string>
     <string name="button_confirm">Confirmar</string>
+    <string name="platform_selected">Plataforma seleccionada: %1$s</string>
+    <string name="back">Volver</string>
+    <string name="pref_img">Imagen de preferencia</string>
+    <string name="pref_name">Nombre de la preferencia</string>
 
 </resources>
