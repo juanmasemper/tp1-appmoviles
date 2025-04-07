@@ -55,7 +55,7 @@ class WelcomeActivity : AppCompatActivity() {
             if (findViewById<CheckBox>(R.id.checkHardware).isChecked) preferencias.add("Hardware")
             if (checkOther.isChecked) {
                 val otra = editOther.text.toString().trim()
-                if (otra.isNotEmpty()) preferencias.add("Otra: $otra")
+                if (otra.isNotEmpty()) preferencias.add(otra)
                 else preferencias.add("Otra")
             }
 
@@ -64,7 +64,7 @@ class WelcomeActivity : AppCompatActivity() {
 
             val intent = Intent(this, PreferenceActivity::class.java)
             intent.putExtra("plataforma_seleccionada", plataforma)
-            intent.putExtra("preferencias_seleccionadas", preferencias.joinToString(", "))
+            intent.putStringArrayListExtra("preferencias_seleccionadas", ArrayList(preferencias))
             startActivity(intent)
         }
     }
