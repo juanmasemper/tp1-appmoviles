@@ -29,5 +29,7 @@
     <string name="back">Volver</string>
     <string name="pref_img">Imagen de preferencia</string>
     <string name="pref_name">Nombre de la preferencia</string>
+    <string name="title">Título</string>
+    <string name="description">Descripción</string>
 
 </resources>

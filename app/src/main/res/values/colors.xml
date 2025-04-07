@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF9800</color> <!-- Naranja -->
     <color name="white">#FFFFFF</color>
     <color name="shadow">#22000000</color> <!-- sombra leve -->
+    <color name="background">#2196F3</color>
 </resources>
