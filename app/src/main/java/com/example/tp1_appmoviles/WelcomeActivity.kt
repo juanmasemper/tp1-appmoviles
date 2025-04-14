@@ -67,5 +67,15 @@ class WelcomeActivity : AppCompatActivity() {
             intent.putStringArrayListExtra("preferencias_seleccionadas", ArrayList(preferencias))
             startActivity(intent)
         }
+
+        //Cerrar Session
+        val buttonLogOut = findViewById<Button>(R.id.buttonCloseSession)
+        buttonLogOut.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
+
     }
 }

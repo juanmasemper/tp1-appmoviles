@@ -31,5 +31,7 @@
     <string name="pref_name">Nombre de la preferencia</string>
     <string name="title">Título</string>
     <string name="description">Descripción</string>
+    <string name="cerrar_session">Cerrar Session</string>
+    <string name="volver_al_inicio">Volver al inicio</string>
 
 </resources>
