@@ -43,6 +43,7 @@ class PreferenceActivity : AppCompatActivity() {
             finish()
         }
 
+
         val textPlatform = findViewById<TextView>(R.id.textPlatform)
         val layoutContainer = findViewById<LinearLayout>(R.id.containerPreferencias)
 

@@ -87,7 +87,7 @@
             android:id="@+id/buttonBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Volver al inicio"
+            android:text="@string/volver_al_inicio"
             android:background="@drawable/button_login"
             android:textColor="@android:color/white"
             android:minHeight="48dp"
