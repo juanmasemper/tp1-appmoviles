@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@drawable/fondo_inicio">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,24 +12,28 @@
         android:gravity="center_horizontal">
 
         <!-- Bienvenida -->
+
+        <!-- Plataforma -->
+
         <TextView
             android:id="@+id/textWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_message"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
             android:layout_marginTop="48dp"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="20dp"
+            android:text="@string/welcome_message"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
-        <!-- Plataforma -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/platform_prompt"
-            android:textColor="@android:color/white"
-            android:layout_marginBottom="8dp" />
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
 
         <RadioGroup
             android:id="@+id/radioGroupPlatform"
@@ -42,8 +46,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/platform_android"
-                android:buttonTint="@android:color/white"
-                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/black"
+                android:textColor="@android:color/black"
                 android:minHeight="48dp"
                 android:padding="8dp" />
 
@@ -52,8 +56,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/platform_ios"
-                android:buttonTint="@android:color/white"
-                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/black"
+                android:textColor="@android:color/black"
                 android:minHeight="48dp"
                 android:padding="8dp" />
         </RadioGroup>
@@ -67,62 +71,69 @@
             android:contentDescription="@string/platform_prompt" />
 
         <!-- Preferencias -->
+
+        <!-- CheckBoxes -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/preferences_prompt"
-            android:textColor="@android:color/white"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:text="@string/preferences_prompt"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
-        <!-- CheckBoxes -->
         <CheckBox
             android:id="@+id/checkProgramming"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="@string/pref_programming"
-            android:buttonTint="@android:color/white"
-            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/black"
             android:minHeight="48dp"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:text="@string/pref_programming"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
 
         <CheckBox
             android:id="@+id/checkNetworking"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="@string/pref_networking"
-            android:buttonTint="@android:color/white"
-            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/black"
             android:minHeight="48dp"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:text="@string/pref_networking"
+            android:textSize="17sp"
+            android:textColor="@android:color/black" />
 
         <CheckBox
             android:id="@+id/checkSecurity"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="@string/pref_security"
-            android:buttonTint="@android:color/white"
-            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:buttonTint="@android:color/black"
+            android:textColor="@android:color/black"
             android:minHeight="48dp"
             android:padding="8dp" />
 
         <CheckBox
             android:id="@+id/checkHardware"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="@string/pref_hardware"
-            android:buttonTint="@android:color/white"
-            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:buttonTint="@android:color/black"
+            android:textColor="@android:color/black"
             android:minHeight="48dp"
             android:padding="8dp" />
 
         <CheckBox
             android:id="@+id/checkOther"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="@string/pref_other"
-            android:buttonTint="@android:color/white"
-            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:buttonTint="@android:color/black"
+            android:textColor="@android:color/black"
             android:minHeight="48dp"
             android:padding="8dp" />
 
@@ -144,21 +155,21 @@
             android:id="@+id/buttonConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_confirm"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/button_register"
-            android:textColor="@android:color/white"
             android:elevation="4dp"
             android:minHeight="48dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="24dp" />
+            android:text="@string/button_confirm"
+            android:textColor="@android:color/black" />
 
         <Button
             android:id="@+id/buttonCloseSession"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cerrar_session"
+            android:text="@string/cerrar_sesion"
             android:background="@drawable/button_register"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:elevation="4dp"
             android:minHeight="48dp"
             android:layout_marginBottom="24dp"/>

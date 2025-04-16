@@ -36,8 +36,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         registerButton.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+            val intent = Intent(this, MainActivity2::class.java) // Cambiado aquí
             startActivity(intent)
+            finish() // Opcional: evita que vuelvan al login con el botón atrás
         }
     }
 }

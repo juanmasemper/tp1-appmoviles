@@ -27,26 +27,38 @@ class RegisterActivity : AppCompatActivity() {
         submitButton.setOnClickListener {
             val name = nameEditText.text.toString().trim()
             val email = emailEditText.text.toString().trim()
+            val username = findViewById<EditText>(R.id.editTextUsername).text.toString().trim()
             val password = passwordEditText.text.toString()
             val repeatPassword = repeatPasswordEditText.text.toString()
 
             when {
-                name.isEmpty() || email.isEmpty() -> {
-                    Toast.makeText(this, "Nombre y Email no pueden estar vacíos", Toast.LENGTH_SHORT).show()
+                name.isEmpty() || email.isEmpty() || username.isEmpty() -> {
+                    Toast.makeText(this, "Todos los campos son obligatorios", Toast.LENGTH_SHORT)
+                        .show()
                 }
+
+                !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
+                    Toast.makeText(this, "Ingresá un email válido", Toast.LENGTH_SHORT).show()
+                }
+
                 password.length < 6 -> {
-                    Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this,
+                        "La contraseña debe tener al menos 6 caracteres",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
+
                 password != repeatPassword -> {
                     Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
                 }
+
                 else -> {
                     Toast.makeText(this, "¡Registrado correctamente!", Toast.LENGTH_SHORT).show()
-                    finish() // Vuelve al login
+                    finish()
                 }
             }
         }
-
         backButton.setOnClickListener {
             finish() // Vuelve al login sin hacer nada
         }

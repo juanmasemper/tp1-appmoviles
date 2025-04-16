@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/background">
+    android:background="@drawable/fondo_inicio">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +17,9 @@
             android:text="@string/platform_selected"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginBottom="8dp" />
+            android:textSize="30sp"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="38dp" />
 
         <LinearLayout
             android:id="@+id/containerPreferencias"
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="@string/back"
             android:background="@drawable/button_register"
-            android:textColor="@color/white"
+            android:textColor="@android:color/black"
             android:elevation="4dp"
             android:minHeight="48dp"
             android:layout_marginTop="32dp"

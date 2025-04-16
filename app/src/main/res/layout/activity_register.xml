@@ -2,11 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@drawable/fondo_inicio">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="24dp"
         android:gravity="center_horizontal">
@@ -17,11 +17,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_register"
-            android:textSize="24sp"
+            android:textSize="34sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:layout_marginTop="64dp"
             android:layout_marginBottom="32dp" />
+
+        <!-- Espaciador flexible -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1" />
 
         <!-- Nombre -->
         <EditText
@@ -31,7 +37,7 @@
             android:hint="@string/hint_name"
             android:inputType="textPersonName"
             android:autofillHints="name"
-            android:background="@android:drawable/editbox_background_normal"
+            android:background="@drawable/rounded_white_button"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
@@ -43,7 +49,19 @@
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
             android:autofillHints="emailAddress"
-            android:background="@android:drawable/editbox_background_normal"
+            android:background="@drawable/rounded_white_button"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Usuario -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:background="@drawable/rounded_white_button"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
@@ -55,7 +73,7 @@
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:autofillHints="newPassword"
-            android:background="@android:drawable/editbox_background_normal"
+            android:background="@drawable/rounded_white_button"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
@@ -67,9 +85,16 @@
             android:hint="@string/hint_repeat_password"
             android:inputType="textPassword"
             android:autofillHints="newPassword"
-            android:background="@android:drawable/editbox_background_normal"
+            android:background="@drawable/rounded_white_button"
             android:padding="12dp"
             android:layout_marginBottom="24dp" />
+
+
+        <!-- Espaciador flexible -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1" />
 
         <!-- Botón de enviar -->
         <Button
@@ -78,20 +103,25 @@
             android:layout_height="wrap_content"
             android:text="@string/button_register"
             android:background="@drawable/button_register"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:elevation="4dp"
             android:minHeight="48dp"
-            android:layout_marginBottom="24dp" />
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Botón volver -->
         <Button
             android:id="@+id/buttonBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/volver_al_inicio"
             android:background="@drawable/button_login"
-            android:textColor="@android:color/white"
             android:minHeight="48dp"
-            android:layout_marginBottom="24dp" />
+            android:text="@string/volver_al_inicio"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp" />
 
     </LinearLayout>
 </ScrollView>
+
+

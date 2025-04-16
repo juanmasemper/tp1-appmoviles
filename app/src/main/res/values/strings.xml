@@ -1,9 +1,16 @@
 <resources>
+
+    <string name="intro_title">Hola, bienvenidos al primer trabajo práctico de Aplicaciones Móviles</string>
+    <string name="intro_description">En esta aplicación vas a explorar conceptos clave del desarrollo móvil nativo en Android.
+    Podrás registrarte, iniciar sesión y personalizar tus preferencias para simular una experiencia
+    de usuario real.</string>
+    <string name="register">Registrarse</string>
+    <string name="login">Iniciar sesión</string>
+
+
     <string name="app_name">TP1-appmoviles</string>
 
     <string name="login_title">TPN1 - App Móviles</string>
-    <string name="login">Iniciar Sesión</string>
-    <string name="register">Registrarse</string>
     <string name="username_hint">Usuario</string>
     <string name="password_hint">Contraseña</string>
 
@@ -31,7 +38,7 @@
     <string name="pref_name">Nombre de la preferencia</string>
     <string name="title">Título</string>
     <string name="description">Descripción</string>
-    <string name="cerrar_session">Cerrar Session</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
     <string name="volver_al_inicio">Volver al inicio</string>
 
 </resources>

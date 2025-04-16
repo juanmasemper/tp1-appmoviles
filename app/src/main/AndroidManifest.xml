@@ -13,6 +13,17 @@
         android:theme="@style/Theme.TP1AppMoviles"
         tools:targetApi="31">
 
+        <!-- Nueva pantalla de inicio -->
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Otras actividades -->
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
@@ -23,16 +34,12 @@
             android:name=".PreferenceActivity"
             android:exported="true" />
         <activity android:name=".PreferenceDetailActivity" />
+
+        <!-- Ya no tiene el launcher -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.TP1AppMoviles">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:theme="@style/Theme.TP1AppMoviles" />
     </application>
 
 </manifest>
