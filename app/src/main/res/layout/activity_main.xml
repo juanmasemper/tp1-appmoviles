@@ -14,12 +14,11 @@
         <!-- Logo -->
         <ImageView
             android:id="@+id/logoImageView"
-            android:layout_width="280dp"
-            android:layout_height="240dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_marginTop="64dp"
             android:layout_marginBottom="32dp"
             android:src="@drawable/logo_app" />
-
 
         <!-- Usuario -->
         <EditText
@@ -42,6 +41,7 @@
             android:inputType="textPassword"
             android:autofillHints="password"
             android:background="@drawable/rounded_white_button"
+            android:drawableEnd="@drawable/ic_eye_closed"
             android:padding="12dp"
             android:layout_marginBottom="32dp" />
 

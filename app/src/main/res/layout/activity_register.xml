@@ -74,6 +74,7 @@
             android:inputType="textPassword"
             android:autofillHints="newPassword"
             android:background="@drawable/rounded_white_button"
+            android:drawableEnd="@drawable/ic_eye_closed"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
@@ -86,9 +87,9 @@
             android:inputType="textPassword"
             android:autofillHints="newPassword"
             android:background="@drawable/rounded_white_button"
+            android:drawableEnd="@drawable/ic_eye_closed"
             android:padding="12dp"
             android:layout_marginBottom="24dp" />
-
 
         <!-- Espaciador flexible -->
         <Space
@@ -123,5 +124,3 @@
 
     </LinearLayout>
 </ScrollView>
-
-
